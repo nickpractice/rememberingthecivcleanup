@@ -8,10 +8,10 @@ AFRAME.registerComponent('physics-image-target', {
       const scene = this.el.sceneEl
       const portalPos = this.el
       // let treeShook = false
-      // object3D.visible = false
+      object3D.visible = false
       // const attachment = scene.querySelector('#attachment')
       // const text = document.querySelector('#shake-tree')
-      // const palm = scene.querySelector('#palm')
+      const civ = scene.querySelector('#civ')
     
       const showImage = ({detail}) => {
         if (name !== detail.name) {
@@ -38,7 +38,7 @@ AFRAME.registerComponent('physics-image-target', {
         // }
       }
       const imageLost = (e) => {
-        object3D.visible = false
+      //  object3D.visible = false
       }
       scene.addEventListener('xrimagefound', imageFound)
       scene.addEventListener('xrimageupdated', showImage)
@@ -54,10 +54,10 @@ AFRAME.registerComponent('physics-image-target', {
       //     repetitions: '2',
       //     crossFadeDuration: 0.4,
       //   })
-        setTimeout(() => {
-          palm.removeAttribute('animation-mixer')
-          text.style.display = 'none'
-        }, 1000)
+        // setTimeout(() => {
+        //   palm.removeAttribute('animation-mixer')
+        //   text.style.display = 'none'
+        // }, 1000)
         // Create element to be thrown, setting position, scale, and model
 //         const obj = document.createElement('a-entity')
 //         obj.setAttribute('gltf-model', '#coconut')
