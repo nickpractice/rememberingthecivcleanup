@@ -28,7 +28,7 @@ AFRAME.registerComponent('physics-image-target', {
           property: 'scale',
           dur: 1500,
           from: '0.001 0.001 0.001',
-          to: '100 100 100',
+          to: '150 150 150',
           easing: 'easeInOutQuad',
         })
         // if (!treeShook) {
